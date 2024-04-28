@@ -1,0 +1,281 @@
+/* Global Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #347B46;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo height */
+}
+
+.project-name {
+    float: left;
+    margin-left: 10px;
+    line-height: 50px;
+}
+
+.project-name h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.content {
+    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.content h2 {
+    font-size: 48px; /* Increase heading size */
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px; /* Increase paragraph font size */
+    margin-bottom: 20px;
+}
+
+.team-section {
+    background-color: #347B46; /* Background color for the team section */
+    padding: 50px 0;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center; /* Center the team member cards */
+    flex-wrap: wrap; /* Allow team member cards to wrap to the next line */
+    margin-top: 20px;
+}
+
+.team-section .content {
+    color: #fff; /* Set text color to white */
+}
+
+.flip-card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px; /* Add margin around each team member card */
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #fff; /* Set background color to white */
+    color: #000; /* Set text color to black */
+    transform: rotateY(180deg);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and border in the element size */
+}
+
+.flip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 20px 40px; /* Increase button padding */
+    margin-top: 40px; /* Increase top margin */
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.mission-section {
+    background-color: #f9f9f9;
+}
+
+.mission-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.mission-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.mission-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Additional Styles for Blog Section */
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.blog-post {
+    width: 30%; /* Adjust the width of each blog post */
+    margin-bottom: 30px;
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    border: 1px solid #ddd; /* Add a border for visual separation */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.blog-post img {
+    width: 100%; /* Make sure the cover image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px 5px 0 0; /* Rounded corners on top */
+}
+
+.blog-post h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #347B46;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.read-more:hover {
+    background-color: #278c47;
+}
+
+/* Video Background */
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.home-section {
+    background-image: url('Background.png'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #000000; 
+    padding: 100px 0; /
+}
